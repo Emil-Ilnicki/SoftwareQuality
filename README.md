@@ -1,5 +1,50 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to install React, and Enzyme
+
+### `Install nodejs - Setup PPA`
+
+Run the following commands in order
+~~~~
+1. cd ~
+2. curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
+3. sudo bash nodesource_setup.sh
+4. sudo apt-get install nodejs -y
+~~~~
+
+Next check node and npm versions
+~~~~
+1. node -v (Should be >v10.0.0)
+2. npm -v (Should be >6.0.0)
+~~~~
+
+Now using npm install react app
+~~~~
+1. sudo npm install create-react-app -g
+~~~~
+
+Now go to the desired folder and type
+~~~~
+1. create-react-app app-name-here
+~~~~
+
+To install Enzyme type into command prompt
+~~~~
+1. npm i --save-dev enzyme enzyme-adapter-react-16
+~~~~
+
+Then go to your setupTests.js file and add the following code
+~~~~
+import '@testing-library/jest-dom/extend-expect';
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+configure({ adapter: new Adapter() });
+~~~~
+
+If any problems occur please refer to the following websites
+https://www.zeolearn.com/magazine/setup-react-ubuntu
+https://github.com/enzymejs/enzyme
+
 ## Available Scripts
 
 In the project directory, you can run:
