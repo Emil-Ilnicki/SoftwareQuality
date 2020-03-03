@@ -44,7 +44,7 @@ configure({ adapter: new Adapter() });
 If any problems occur please refer to the following websites
 > https://www.zeolearn.com/magazine/setup-react-ubuntu
 
-https://github.com/enzymejs/enzyme
+> https://github.com/enzymejs/enzyme
 
 ## Available Scripts
 
